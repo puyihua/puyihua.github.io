@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Python3 ReLearning Notebook 1 - Puyh</title>
+  <link rel="alternate" hreflang="en" href="http://localhost:1313/" />
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+
+<meta name="author" content="Puyh" />
+  <meta name="description" content="#1. Code of String ASCII: use 8 bit to represent 256 characters including numbers, letters and punctuations. Unicode: usually use 2 bytes to represent all of the characters including letters from various languages. uft-8: 8-bit Unicode Transformation Format. A character in UTF8 can be from 1 to 4 bytes long. UTF-8 can represent any character in the Unicode standard. UTF-8 is backwards compatible with ASCII. #2. .encode() &amp;amp; .decode.() bytes" />
+
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.38" />
+
+
+<link rel="canonical" href="http://localhost:1313/post/2018-4-1/" />
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" href="/favicon.ico" />
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+<link href="/dist/jane.min.css?v=2.7.0" rel="stylesheet">
+<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+
+
+
+<meta property="og:title" content="Python3 ReLearning Notebook 1" />
+<meta property="og:description" content="#1. Code of String ASCII: use 8 bit to represent 256 characters including numbers, letters and punctuations. Unicode: usually use 2 bytes to represent all of the characters including letters from various languages. uft-8: 8-bit Unicode Transformation Format. A character in UTF8 can be from 1 to 4 bytes long. UTF-8 can represent any character in the Unicode standard. UTF-8 is backwards compatible with ASCII. #2. .encode() &amp; .decode.() bytes" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/2018-4-1/" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="Python3 ReLearning Notebook 1">
+<meta itemprop="description" content="#1. Code of String ASCII: use 8 bit to represent 256 characters including numbers, letters and punctuations. Unicode: usually use 2 bytes to represent all of the characters including letters from various languages. uft-8: 8-bit Unicode Transformation Format. A character in UTF8 can be from 1 to 4 bytes long. UTF-8 can represent any character in the Unicode standard. UTF-8 is backwards compatible with ASCII. #2. .encode() &amp; .decode.() bytes">
+
+
+
+<meta itemprop="wordCount" content="322">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Python3 ReLearning Notebook 1"/>
+<meta name="twitter:description" content="#1. Code of String ASCII: use 8 bit to represent 256 characters including numbers, letters and punctuations. Unicode: usually use 2 bytes to represent all of the characters including letters from various languages. uft-8: 8-bit Unicode Transformation Format. A character in UTF8 can be from 1 to 4 bytes long. UTF-8 can represent any character in the Unicode standard. UTF-8 is backwards compatible with ASCII. #2. .encode() &amp; .decode.() bytes"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Puyh</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+</nav>
+
+  <header id="header" class="header container">
+    <div class="logo-wrapper">
+  <a href="/" class="logo">Puyh</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        
+        <a class="menu-item-link" href="/">Home</a>
+        
+      </li><li class="menu-item">
+        
+        <a class="menu-item-link" href="/post/">Archives</a>
+        
+      </li><li class="menu-item">
+        
+        <a class="menu-item-link" href="/about/">About</a>
+        
+      </li>
+  </ul>
+</nav>
+  </header>
+
+  <div id="mobile-panel">
+    <main id="main" class="main bg-llight">
+      <div class="content-wrapper">
+        <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">Python3 ReLearning Notebook 1</h1>
+      
+      <div class="post-meta">
+        <span class="post-time"> 0001-01-01 </span>
+        
+        <span class="more-meta"> 322 words </span>
+        <span class="more-meta"> 1 min read </span>
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Table of Contents</h2>
+  <div class="post-toc-content">
+    
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      <p>#1. Code of String
+<strong>ASCII</strong>: use 8 bit to represent 256 characters including numbers, letters and punctuations.</p>
+
+<p><strong>Unicode</strong>: usually use 2 bytes to represent all of the characters including letters from various languages.</p>
+
+<p><strong>uft-8</strong>: <em>8-bit Unicode Transformation Format</em>. A character in UTF8 can be from 1 to 4 bytes long. UTF-8 can represent any character in the Unicode standard. UTF-8 is backwards compatible with ASCII.</p>
+
+<p>#2. .encode() &amp; .decode.()
+<strong>bytes</strong> b&rsquo;123abc&rsquo; per character(within ASCII) occupies one byte storage</p>
+
+<p><strong>&lsquo;xxx&rsquo;.encode(&lsquo;utf-8&rsquo;)</strong>: strings to bytes. &lsquo;utf-8&rsquo; is the coding format of &lsquo;xxx&rsquo;</p>
+
+<blockquote>
+<p>&gt;&gt;&gt;<code>'中文'.encode('utf-8')</code>
+&gt;&gt;&gt;<code>b'\xe4\xb8\xad\xe6\x96\x87'</code></p>
+</blockquote>
+
+<p><strong>&lsquo;xxx&rsquo;.decode(&lsquo;utf-8&rsquo;)</strong>: bytes to format.
+&gt; &gt;&gt;&gt;<code>b'\xe4\xb8\xad\xe6\x96\x87'.decode('utf-8')</code>
+&gt;&gt;&gt; <code>'中文'</code></p>
+
+<p>#3. list
+- <code>classmates = ['Michael', 'Bob', 'Tracy']</code>
+- changeable, sortable
+- index: 0 ~ len(list)-1
+- classmates.append(&lsquo;Adam&rsquo;) : add to tail
+- classmates.insert(1, &lsquo;Jack&rsquo;): add as classmates[1]
+- classmates.pop() : return and delete the tail element</p>
+
+<p>#4. tuple
+- <code>classmates = ('Michael', 'Bob', 'Tracy')</code>
+- no insert or append, unchangeable
+- only 1 element in a tuple : <code>t = (1,)</code></p>
+
+<ul>
+<li>function will return a tuple, under this condition <code>return x,y</code></li>
+</ul>
+
+<p>#5. input()
+in the case: <code>s = input('blabla:')</code></p>
+
+<p><strong>type(s) &gt;&gt;&gt; strings !</strong></p>
+
+<p>#6. dict(map) &amp; sets
+- dict is consisted of key-value elements, which requires the key is non-variable object
+- sets <code>s = set([1, 2, 3])</code>
+- dict <code>d = {'Michael': 95, 'Bob': 75, 'Tracy': 85}</code>
+- sets is almost dicts, but there are 2 difference
+  1. there is no keys in sets
+  2. sets can be regarded as math sets, <code>s1 &amp; s2</code>, <code>s1 | s2</code></p>
+
+<p>#7. Variable parameter (vary in the num of inputs)
+&gt; def calc(*numbers):
+&gt;    sum = 0
+&gt;    for n in numbers:
+&gt;       sum = sum + n * n
+&gt;    return sum</p>
+
+<pre><code>nums = [1, 2, 3]
+calc(*nums)
+14
+</code></pre>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Puyh</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">0001-01-01</span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/2018-3-26-terminal-proxy/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">MacOS Terminal Proxy with Shadowsocks</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        
+          <a class="next" href="/post/2017-02-06-retrospect-and-prospect-in-2017/">
+            <span class="next-text nav-default">Retrospect and Prospect in 2017</span>
+            <span class="prev-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+    
+
+  
+
+  
+
+  <div id="comments-gitment"></div>
+  <link rel="stylesheet" href="/lib/gitment/gitment-0.0.3.min.css">
+    <script src="/lib/gitment/gitment-0.0.3.min.js"></script>
+  <script type="text/javascript">
+  const gitment = new Gitment({
+    id: '2018-4-1.md',
+    title: 'Python3 ReLearning Notebook 1',
+    link: decodeURI(location.href),
+    desc: '#1. Code of String ASCII: use 8 bit to represent 256 characters including numbers, letters and punctuations. Unicode: usually use 2 bytes to represent all of the characters including letters from various languages. uft-8: 8-bit Unicode Transformation Format. A character in UTF8 can be from 1 to 4 bytes long. UTF-8 can represent any character in the Unicode standard. UTF-8 is backwards compatible with ASCII. #2. .encode() \x26amp; .decode.() bytes',
+    owner: 'puyihua',
+    repo: '',
+    oauth: {
+      client_id: '',
+      client_secret: ''
+    }
+  })
+  gitment.render('comments-gitment')
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://github.com/imsun/gitment">comments powered by gitment.</a></noscript>
+  </article>
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:puyihua1@gmail.com" rel="me" class="iconfont icon-email" title="email"></a>
+      <a href="#" rel="me" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="#" rel="me" class="iconfont icon-zhihu" title="zhihu"></a>
+  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy; 
+    
+      2016 - 
+    2018
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Puyh</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script src="/lib/highlight/highlight.pack.js?v=20171001"></script>
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+<script type="text/javascript" src="/dist/jane.min.js?v=2.7.0"></script>
+
+
+
+
+
+</body>
+</html>
