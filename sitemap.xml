@@ -10,8 +10,43 @@
   </url>
   
   <url>
+    <loc>http://localhost:1313/post/2018-3-26-terminal-proxy/</loc>
+    <lastmod>2019-01-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/2017-8-29-pandas/</loc>
+    <lastmod>2018-08-29T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/post/2018-4-2/</loc>
-    <lastmod>2017-08-20T21:38:52+08:00</lastmod>
+    <lastmod>2018-06-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/2018-4-1/</loc>
+    <lastmod>2018-06-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/2017-02-06-retrospect-and-prospect-in-2017/</loc>
+    <lastmod>2017-04-10T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/2017-02-03-jekyll%E5%88%9D%E4%BD%93%E9%AA%8C/</loc>
+    <lastmod>2017-02-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -23,26 +58,8 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/2017-8-29-pandas/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/categories/debug/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/post/2018-3-26-terminal-proxy/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://localhost:1313/post/</loc>
-    <lastmod>2017-08-20T21:38:52+08:00</lastmod>
+    <lastmod>2019-01-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -55,27 +72,9 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/2018-4-1/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/post/2017-02-06-retrospect-and-prospect-in-2017/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://localhost:1313/tags/</loc>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/post/2017-02-03-jekyll%E5%88%9D%E4%BD%93%E9%AA%8C/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
   </url>
   
 </urlset>

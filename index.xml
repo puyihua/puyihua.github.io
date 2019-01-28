@@ -19,8 +19,9 @@
       <guid>http://localhost:1313/about/</guid>
       
         <description>&lt;ul&gt;
-&lt;li&gt;College Student in ECUST, Shanghai, China&lt;/li&gt;
-&lt;li&gt;Coding, Python, Machine Learning, Electronic Device&lt;/li&gt;
+&lt;li&gt;❤️ Computer Science, Programmming, Electronic Devices&lt;/li&gt;
+&lt;li&gt;Senior Exchange Student at University of Illinois at Chicago, IL, US&lt;/li&gt;
+&lt;li&gt;EE &amp;amp; Automation at ECUST, Shanghai, China&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;wubba lubba dub dub&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -30,235 +31,25 @@
     </item>
     
     <item>
-      <title>Python3 relearning notebook [1]</title>
-      <link>http://localhost:1313/post/2018-4-2/</link>
-      <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
+      <title>MacOS Terminal Proxy with Shadowsocks</title>
+      <link>http://localhost:1313/post/2018-3-26-terminal-proxy/</link>
+      <pubDate>Wed, 02 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2018-4-2/</guid>
+      <guid>http://localhost:1313/post/2018-3-26-terminal-proxy/</guid>
       
-        <description>
+        <description>&lt;p&gt;Because of the Great Firewall, it becomes kind of impossible to access most of the abroad website without proxy in China. I always got a &amp;lsquo;404&amp;rsquo; even when I was visiting certain abroad universities&amp;rsquo; site. I used a advanced VPN tool &lt;code&gt;shadowsocks&lt;/code&gt; to build a encrypted proxy between my laptop in China and my Linux Server in Japan. All of my http requests would go through Japan and then arrive America or Europe. In other word, I made a detour to avoid the firewall.&lt;/p&gt;
 
-&lt;h1 id=&#34;generator&#34;&gt;Generator&lt;/h1&gt;
+&lt;p&gt;But there are still some problems when I was using Terminal instead of Browsers. I always got some connect errors when I use some tools such as &lt;code&gt;pip&lt;/code&gt; and &lt;code&gt;conda&lt;/code&gt; to download packages from abroad sources.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;g = (x*x for x in range(1,10))
-next(g)
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To solve this problem, I started to think whether I can use Shadowsocks as proxy for my Terminal. And luckily, I find some informing tutorials from Google.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;1
-&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mrdulin/blog/issues/18&#34;&gt;https://github.com/mrdulin/blog/issues/18&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://wido.me/sunteya/understand-bashrc-and-profile&#34;&gt;https://wido.me/sunteya/understand-bashrc-and-profile&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://stackoverflow.com/questions/38794015/pythons-requests-missing-dependencies-for-socks-support-when-using-socks5-fro&#34;&gt;https://stackoverflow.com/questions/38794015/pythons-requests-missing-dependencies-for-socks-support-when-using-socks5-fro&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;for i in g:
-    print(i)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;4
-9
-16
-25
-36
-49
-64
-81
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def fib(max):
-    n,a,b = 0,0,1
-    while(n&amp;lt;max):
-        yield b
-        a,b = b, a+b
-        n = n+1
-    return &#39;done&#39;
-f = fib(6)
-for i in f:
-    print(i)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;1
-1
-2
-3
-5
-8
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;%matplotlib inline
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import matplotlib.pyplot as plt
-import numpy as np
-
-x = np.arange(20)
-y = x**2
-
-plt.plot(x, y)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;[&amp;lt;matplotlib.lines.Line2D at 0x11bdb46d8&amp;gt;]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&#34;output_5_1.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;a=2
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;del a
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;for i in range(2):
-    print(i)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;0
-1
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print (1.2 - 1.0 == 0.2)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;False
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;1.2-1.0
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;0.19999999999999996
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;a = 1
-b = 2
-c = 3
-d = a if a&amp;gt;b else b
-d
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;2
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def triangles():
-    L=[1]
-    while True:
-        yield L
-        L.append(0)
-        L = [L[i-1]+L[i] for i in range(len(L))]
-        #L.pop()
-    return &#39;done&#39;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;n = 0
-results = []
-for t in triangles():
-    print(t)
-    results.append(t)
-    n = n + 1
-    if n == 10:
-        break
-if results == [
-    [1],
-    [1, 1],
-    [1, 2, 1],
-    [1, 3, 3, 1],
-    [1, 4, 6, 4, 1],
-    [1, 5, 10, 10, 5, 1],
-    [1, 6, 15, 20, 15, 6, 1],
-    [1, 7, 21, 35, 35, 21, 7, 1],
-    [1, 8, 28, 56, 70, 56, 28, 8, 1],
-    [1, 9, 36, 84, 126, 126, 84, 36, 9, 1]
-]:
-    print(&#39;测试通过!&#39;)
-else:
-    print(&#39;测试失败!&#39;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;[1]
-[1, 1]
-[1, 2, 1]
-[1, 3, 3, 1]
-[1, 4, 6, 4, 1]
-[1, 5, 10, 10, 5, 1]
-[1, 6, 15, 20, 15, 6, 1]
-[1, 7, 21, 35, 35, 21, 7, 1]
-[1, 8, 28, 56, 70, 56, 28, 8, 1]
-[1, 9, 36, 84, 126, 126, 84, 36, 9, 1]
-测试通过!
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(results)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;[[1, 0], [1, 1, 0], [1, 2, 1, 0], [1, 3, 3, 1, 0], [1, 4, 6, 4, 1, 0], [1, 5, 10, 10, 5, 1, 0], [1, 6, 15, 20, 15, 6, 1, 0], [1, 7, 21, 35, 35, 21, 7, 1, 0], [1, 8, 28, 56, 70, 56, 28, 8, 1, 0], [1, 9, 36, 84, 126, 126, 84, 36, 9, 1]]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;为什么results的输出末尾带0？我来回答！&lt;/p&gt;
-
-&lt;p&gt;在我的电脑中，results的结果是：&lt;/p&gt;
-
-&lt;p&gt;[[1, 0], [1, 1, 0], [1, 2, 1, 0], [1, 3, 3, 1, 0], [1, 4, 6, 4, 1, 0], [1, 5, 10, 10, 5, 1, 0], [1, 6, 15, 20, 15, 6, 1, 0], [1, 7, 21, 35, 35, 21, 7, 1, 0], [1, 8, 28, 56, 70, 56, 28, 8, 1, 0], [1, 9, 36, 84, 126, 126, 84, 36, 9, 1]]
-通过观察，不难发现，第十个list：&lt;/p&gt;
-
-&lt;p&gt;[1, 9, 36, 84, 126, 126, 84, 36, 9, 1]
-末尾没有零。于是，似乎可以想到些什么，为什么最后一个正常呢？
-再看一下调用triangles生成器的代码:&lt;/p&gt;
-
-&lt;p&gt;for t in triangles():
-    print(t)
-    results.append(t)
-    n = n + 1
-    if n == 10:
-        break
-当执行第三句results.append(t)时，实际上，此时results中的List和t指向的List是同一个地址。所以，如果t发生变化，resluts中的List也会跟着变化。那么，t指向的List有没有发生变化呢？答案是有：
-当再次执行到for t in triangles():时，生成器：&lt;/p&gt;
-
-&lt;p&gt;def triangles():
-    L = [1]
-    while True:
-        yield L
-        L.append(0)
-        L = [L[i - 1] + L[i] for i in range(len(L))]
-里面的L.append(0)就会给t指向的List末端加0.所以&amp;hellip;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def triangles():
-    L=[1]
-    while True:
-        yield L
-        tmp = L.copy()
-        tmp.append(0)
-        L = [tmp[i-1]+tmp[i] for i in range(len(tmp))]
-        #L.pop()
-    return &#39;done&#39;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h1 id=&#34;iterator-iterable&#34;&gt;iterator &amp;amp; iterable&lt;/h1&gt;
-
-&lt;p&gt;凡是可作用于for循环的对象都是Iterable类型；&lt;/p&gt;
-
-&lt;p&gt;凡是可作用于next()函数的对象都是Iterator类型，它们表示一个惰性计算的序列；&lt;/p&gt;
-
-&lt;p&gt;集合数据类型如list、dict、str等是Iterable但不是Iterator，不过可以通过iter()函数获得一个Iterator对象。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;for x in [1, 2, 3, 4, 5]:
-    pass
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# 首先获得Iterator对象:
-it = iter([1, 2, 3, 4, 5])
-# 循环:
-while True:
-    try:
-        # 获得下一个值:
-        x = next(it)
-    except StopIteration:
-        # 遇到StopIteration就退出循环
-        break
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Concretely, add &lt;code&gt;proxy=...&lt;/code&gt; and &lt;code&gt;unproxy=...&lt;/code&gt; in &lt;code&gt;~/.bashrc&lt;/code&gt;. To ensure &lt;code&gt;pip&lt;/code&gt; can use SOCKS5 proxy, &lt;code&gt;pip install requests[socks]&lt;/code&gt;, and &lt;code&gt;proxy&lt;/code&gt; to start the terminal proxy. Btw, using &lt;code&gt;curl ip.cn&lt;/code&gt; to make sure your Terminal is on the proxy.&lt;/p&gt;
 </description>
       
     </item>
@@ -266,7 +57,7 @@ while True:
     <item>
       <title>Data Mining - Learn Pandas</title>
       <link>http://localhost:1313/post/2017-8-29-pandas/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 29 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2017-8-29-pandas/</guid>
       
@@ -550,25 +341,235 @@ male
     </item>
     
     <item>
-      <title>MacOS Terminal Proxy with Shadowsocks</title>
-      <link>http://localhost:1313/post/2018-3-26-terminal-proxy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Python3 relearning notebook II</title>
+      <link>http://localhost:1313/post/2018-4-2/</link>
+      <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2018-3-26-terminal-proxy/</guid>
+      <guid>http://localhost:1313/post/2018-4-2/</guid>
       
-        <description>&lt;p&gt;Because of some regulations, it becomes more and more difficult to visit with abroad sites in China. The throughput with abroad IP is limited within a very low level, which is nearly unusable.&lt;/p&gt;
+        <description>
 
-&lt;p&gt;Accordingly, I got some connect errors when I use some tools such as &lt;code&gt;pip&lt;/code&gt; and &lt;code&gt;conda&lt;/code&gt; to install packages.&lt;/p&gt;
+&lt;h1 id=&#34;generator&#34;&gt;Generator&lt;/h1&gt;
 
-&lt;p&gt;To solve this problem, I started to think whether I can use Shadowsocks as proxy for my Terminal. And luckily, I find some informing tutorials from Google.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;g = (x*x for x in range(1,10))
+next(g)
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/mrdulin/blog/issues/18&#34;&gt;https://github.com/mrdulin/blog/issues/18&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://wido.me/sunteya/understand-bashrc-and-profile&#34;&gt;https://wido.me/sunteya/understand-bashrc-and-profile&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://stackoverflow.com/questions/38794015/pythons-requests-missing-dependencies-for-socks-support-when-using-socks5-fro&#34;&gt;https://stackoverflow.com/questions/38794015/pythons-requests-missing-dependencies-for-socks-support-when-using-socks5-fro&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;1
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Concretely, add &lt;code&gt;proxy=...&lt;/code&gt; and &lt;code&gt;unproxy=...&lt;/code&gt; in &lt;code&gt;~/.bashrc&lt;/code&gt;. To ensure &lt;code&gt;pip&lt;/code&gt; can use SOCKS5 proxy, type &lt;code&gt;pip install requests[socks]&lt;/code&gt;, and type &lt;code&gt;proxy&lt;/code&gt; to start our high-speed terminal experience. Btw, using &lt;code&gt;curl ip.cn&lt;/code&gt; to make sure your Terminal is on the proxy.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;for i in g:
+    print(i)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;4
+9
+16
+25
+36
+49
+64
+81
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def fib(max):
+    n,a,b = 0,0,1
+    while(n&amp;lt;max):
+        yield b
+        a,b = b, a+b
+        n = n+1
+    return &#39;done&#39;
+f = fib(6)
+for i in f:
+    print(i)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;1
+1
+2
+3
+5
+8
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;%matplotlib inline
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.arange(20)
+y = x**2
+
+plt.plot(x, y)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;[&amp;lt;matplotlib.lines.Line2D at 0x11bdb46d8&amp;gt;]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;output_5_1.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;a=2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;del a
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;for i in range(2):
+    print(i)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;0
+1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print (1.2 - 1.0 == 0.2)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;False
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;1.2-1.0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;0.19999999999999996
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;a = 1
+b = 2
+c = 3
+d = a if a&amp;gt;b else b
+d
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def triangles():
+    L=[1]
+    while True:
+        yield L
+        L.append(0)
+        L = [L[i-1]+L[i] for i in range(len(L))]
+        #L.pop()
+    return &#39;done&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;n = 0
+results = []
+for t in triangles():
+    print(t)
+    results.append(t)
+    n = n + 1
+    if n == 10:
+        break
+if results == [
+    [1],
+    [1, 1],
+    [1, 2, 1],
+    [1, 3, 3, 1],
+    [1, 4, 6, 4, 1],
+    [1, 5, 10, 10, 5, 1],
+    [1, 6, 15, 20, 15, 6, 1],
+    [1, 7, 21, 35, 35, 21, 7, 1],
+    [1, 8, 28, 56, 70, 56, 28, 8, 1],
+    [1, 9, 36, 84, 126, 126, 84, 36, 9, 1]
+]:
+    print(&#39;测试通过!&#39;)
+else:
+    print(&#39;测试失败!&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;[1]
+[1, 1]
+[1, 2, 1]
+[1, 3, 3, 1]
+[1, 4, 6, 4, 1]
+[1, 5, 10, 10, 5, 1]
+[1, 6, 15, 20, 15, 6, 1]
+[1, 7, 21, 35, 35, 21, 7, 1]
+[1, 8, 28, 56, 70, 56, 28, 8, 1]
+[1, 9, 36, 84, 126, 126, 84, 36, 9, 1]
+测试通过!
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(results)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;[[1, 0], [1, 1, 0], [1, 2, 1, 0], [1, 3, 3, 1, 0], [1, 4, 6, 4, 1, 0], [1, 5, 10, 10, 5, 1, 0], [1, 6, 15, 20, 15, 6, 1, 0], [1, 7, 21, 35, 35, 21, 7, 1, 0], [1, 8, 28, 56, 70, 56, 28, 8, 1, 0], [1, 9, 36, 84, 126, 126, 84, 36, 9, 1]]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;为什么results的输出末尾带0？我来回答！&lt;/p&gt;
+
+&lt;p&gt;在我的电脑中，results的结果是：&lt;/p&gt;
+
+&lt;p&gt;[[1, 0], [1, 1, 0], [1, 2, 1, 0], [1, 3, 3, 1, 0], [1, 4, 6, 4, 1, 0], [1, 5, 10, 10, 5, 1, 0], [1, 6, 15, 20, 15, 6, 1, 0], [1, 7, 21, 35, 35, 21, 7, 1, 0], [1, 8, 28, 56, 70, 56, 28, 8, 1, 0], [1, 9, 36, 84, 126, 126, 84, 36, 9, 1]]
+通过观察，不难发现，第十个list：&lt;/p&gt;
+
+&lt;p&gt;[1, 9, 36, 84, 126, 126, 84, 36, 9, 1]
+末尾没有零。于是，似乎可以想到些什么，为什么最后一个正常呢？
+再看一下调用triangles生成器的代码:&lt;/p&gt;
+
+&lt;p&gt;for t in triangles():
+    print(t)
+    results.append(t)
+    n = n + 1
+    if n == 10:
+        break
+当执行第三句results.append(t)时，实际上，此时results中的List和t指向的List是同一个地址。所以，如果t发生变化，resluts中的List也会跟着变化。那么，t指向的List有没有发生变化呢？答案是有：
+当再次执行到for t in triangles():时，生成器：&lt;/p&gt;
+
+&lt;p&gt;def triangles():
+    L = [1]
+    while True:
+        yield L
+        L.append(0)
+        L = [L[i - 1] + L[i] for i in range(len(L))]
+里面的L.append(0)就会给t指向的List末端加0.所以&amp;hellip;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def triangles():
+    L=[1]
+    while True:
+        yield L
+        tmp = L.copy()
+        tmp.append(0)
+        L = [tmp[i-1]+tmp[i] for i in range(len(tmp))]
+        #L.pop()
+    return &#39;done&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;iterator-iterable&#34;&gt;iterator &amp;amp; iterable&lt;/h1&gt;
+
+&lt;p&gt;凡是可作用于for循环的对象都是Iterable类型；&lt;/p&gt;
+
+&lt;p&gt;凡是可作用于next()函数的对象都是Iterator类型，它们表示一个惰性计算的序列；&lt;/p&gt;
+
+&lt;p&gt;集合数据类型如list、dict、str等是Iterable但不是Iterator，不过可以通过iter()函数获得一个Iterator对象。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;for x in [1, 2, 3, 4, 5]:
+    pass
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# 首先获得Iterator对象:
+it = iter([1, 2, 3, 4, 5])
+# 循环:
+while True:
+    try:
+        # 获得下一个值:
+        x = next(it)
+    except StopIteration:
+        # 遇到StopIteration就退出循环
+        break
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;
+&lt;/code&gt;&lt;/pre&gt;
 </description>
       
     </item>
@@ -576,7 +577,7 @@ male
     <item>
       <title>Python3 ReLearning Notebook 1</title>
       <link>http://localhost:1313/post/2018-4-1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2018-4-1/</guid>
       
@@ -649,7 +650,7 @@ calc(*nums)
     <item>
       <title>Retrospect and Prospect in 2017</title>
       <link>http://localhost:1313/post/2017-02-06-retrospect-and-prospect-in-2017/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 10 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2017-02-06-retrospect-and-prospect-in-2017/</guid>
       
@@ -709,7 +710,7 @@ calc(*nums)
     <item>
       <title>jekyll初体验</title>
       <link>http://localhost:1313/post/2017-02-03-jekyll%E5%88%9D%E4%BD%93%E9%AA%8C/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 03 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2017-02-03-jekyll%E5%88%9D%E4%BD%93%E9%AA%8C/</guid>
       
