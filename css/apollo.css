@@ -1,10 +1,10 @@
-@import url(fonts.googleapis.com/css?family=Libre+Franklin:400,600&display=swap);
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS and IE text size adjust after device orientation change,
  *    without disabling user zoom.
  */
+@import url("https://fonts.googleapis.com/css?family=Libre+Franklin:400,600|Roboto&display=swap");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -368,7 +368,7 @@ body {
   font-size: 15px;
   line-height: 1.6;
   background-color: #fff;
-  font-family: 'sourcesanspro', 'Helvetica Neue', Arial, sans-serif; }
+  font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif; }
 
 ul.nav,
 ul.post-list {
@@ -412,9 +412,12 @@ table {
     padding: 5px;
     vertical-align: text-top; }
 
+span.emoji {
+  vertical-align: middle; }
+
 .gbutton {
   font-size: 16px;
-  font-family: "Benton Sans",'Libre Franklin', Helvetica,sans-serif;
+  font-family: 'Benton Sans','Libre Franklin', Helvetica,sans-serif;
   background-color: #83ffcd;
   font-weight: 600;
   border-radius: 5px;
@@ -430,6 +433,21 @@ table {
     background-color: lightgrey;
     box-shadow: 1px 1px black;
     outline: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Benton Sans','Libre Franklin', Helvetica,sans-serif;
+  font-weight: 600; }
+
+.incline-bar {
+  display: inline-block;
+  transform: rotate(-1deg);
+  position: relative;
+  z-index: 0;
+  color: #222;
+  background-color: yellow;
+  left: 15px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px; }
 
 header {
   position: relative;
@@ -771,11 +789,11 @@ main.container {
 
 @media screen and (min-width: 700px) {
   .wrap {
-    width: 700px;
+    width: 800px;
     margin: 0 auto; }
 
   header {
-    padding: 20px 100px; } }
+    padding: 20px 20px; } }
 @media screen and (max-width: 700px) {
   .wrap {
     width: 100%; }
@@ -814,14 +832,8 @@ footer {
     footer .copyright p, footer .copyright a {
       color: #aaa;
       font-size: 14px;
-      font-weight: 100; }
+      font-weight: 200; }
     footer .copyright a:hover {
       color: #888; }
-
-@font-face {
-  font-family: 'sourcesanspro';
-  src: url("../font/sourcesanspro.woff2") format("woff2"), url("../font/sourcesanspro.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
 
 /*# sourceMappingURL=apollo.css.map */

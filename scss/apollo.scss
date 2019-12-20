@@ -1,5 +1,4 @@
 @charset "utf-8";
-@import url(fonts.googleapis.com/css?family=Libre+Franklin:400,600&display=swap);
 
 @import "_partial/normalize";
 @import "_partial/base";
@@ -11,10 +10,11 @@
 @import "_partial/mq";
 @import "_partial/copyright";
 
-@font-face {
-    font-family: 'sourcesanspro';
-    src: url('../font/sourcesanspro.woff2') format('woff2'),
-         url('../font/sourcesanspro.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:400,600|Roboto&display=swap');
+// @font-face {
+//     font-family: 'sourcesanspro';
+//     src: url('../font/sourcesanspro.woff2') format('woff2'),
+//          url('../font/sourcesanspro.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
