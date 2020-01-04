@@ -412,13 +412,9 @@ table {
     padding: 5px;
     vertical-align: text-top; }
 
-span.emoji {
-  vertical-align: middle; }
-
 .gbutton {
   font-size: 16px;
   font-family: 'Benton Sans','Libre Franklin', Helvetica,sans-serif;
-  background-color: #83ffcd;
   font-weight: 600;
   border-radius: 5px;
   border: 2px solid black;
@@ -426,10 +422,26 @@ span.emoji {
   cursor: pointer;
   padding: 0.375em 0.5em 0.1875em; }
   .gbutton:hover {
-    background-color: yellow;
     box-shadow: 3px 3px black;
     outline: 0; }
   .gbutton.active, .gbutton:active {
+    box-shadow: 1px 1px black;
+    outline: 0; }
+
+.green-btn {
+  background-color: #83ffcd; }
+  .green-btn:hover {
+    background-color: yellow; }
+  .green-btn.active, .green-btn:active {
+    background-color: lightgrey;
+    box-shadow: 1px 1px black;
+    outline: 0; }
+
+.white-btn {
+  background-color: white; }
+  .white-btn.active, .white-btn:hover {
+    background-color: whitesmoke; }
+  .white-btn:active {
     background-color: lightgrey;
     box-shadow: 1px 1px black;
     outline: 0; }
@@ -454,6 +466,28 @@ h1, h2, h3, h4, h5, h6 {
   border-width: .2em;
   border-color: #d99baf;
   box-shadow: -.25em .183em .43em #cecaca; }
+
+.buttons {
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.findme {
+  display: inline-block;
+  height: 190px;
+  width: 143px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 100px 20px; }
+  .findme .emoji {
+    display: block;
+    font-size: 140px;
+    line-height: 150px; }
+  .findme h3 {
+    line-height: 0px; }
 
 header {
   position: relative;
