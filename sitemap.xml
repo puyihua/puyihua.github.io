@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://puyh.pub/resume/index.html</loc>
+    
+    <lastmod>2020-01-04T07:21:05.178Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://puyh.pub/projects/boundaries/index.html</loc>
     
     <lastmod>2019-12-25T18:01:05.636Z</lastmod>
@@ -45,13 +52,6 @@
   
   <url>
     <loc>http://puyh.pub/findme/index.html</loc>
-    
-    <lastmod>2019-12-08T04:28:25.522Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://puyh.pub/resume/index.html</loc>
     
     <lastmod>2019-12-08T04:28:25.522Z</lastmod>
     
